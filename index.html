@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_8</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+            <button onclick="result()" id="valider" name="valider">Valider</button>
+        </form>
+        <script>
+        function pr0nSite() {
+          var detection = document.getElementById("age").value;
+          var lire_detection = parseFloat(detection);
+            if (isNaN (lire_detection)) {
+              return "Cul de jate";
+            }
+            else if (lire_detection <= 18) {
+              return "Teletubbies";
+            }
+            else {
+            return "Petit vénard!";
+            }
+          }
+          function result() {
+              alert(pr0nSite());
+          }
+        </script>
+    </body>
+</html>
